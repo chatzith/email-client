@@ -12,4 +12,6 @@ async def entry_point(sender: str, subject: str, att: bool = False):
     Returns:
         A message describing the triggered test use case.
     """
-    return f"case_a triggered by {sender} with subject {subject} and attachment: {att}!"
+    return (
+        f'case_a triggered by "{sender}" with subject "{subject}" and attachment: {att}'
+    )

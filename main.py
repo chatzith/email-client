@@ -19,5 +19,4 @@ async def main():
         print(await usecase.entry_point(SENDER, SUBJECT, HAS_ATT))
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+asyncio.run(main())
